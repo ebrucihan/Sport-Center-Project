@@ -26,46 +26,69 @@
       referrerpolicy="no-referrer"
     />
 
-    <title>Sport-Center</title>
+    <title>Sport-Center-Project</title>
   </head>
   <body>
-    <!--navbar start-->
+    <!-- Navbar start -->
     <nav class="navbar-container">
+      <!-- Logo container with an image -->
       <div class="logo">
         <img src="img/logo.png" alt="band" />
       </div>
+
+      <!-- Checkbox for responsive hamburger menu functionality -->
       <input type="checkbox" class="menu-btn" id="menu-btn" />
+
+      <!-- Label for hamburger icon -->
       <label for="menu-btn" class="menu-icon">
         <i class="fa-solid fa-bars menu-hmbgr"></i>
       </label>
+
+      <!-- Navigation bar with links to different sections of the page -->
       <div class="bar">
         <a href="#home">Home</a>
+        <!-- Link to home section -->
         <a href="#classes">Classes</a>
+        <!-- Link to classes section -->
         <a href="#trainer">Trainer</a>
+        <!-- Link to trainer section -->
         <a href="#review">Review</a>
+        <!-- Link to review section -->
         <a href="#contact">Contact</a>
+        <!-- Link to contact section -->
+
+        <!-- Join Us button wrapped in a link -->
         <button>
           <a href="#joinus"><p>JOIN US</p></a>
+          <!-- Link to join us section -->
         </button>
       </div>
     </nav>
-
-    <!--navbar end-->
+    <!-- Navbar end -->
     <header>
       <section id="home" class="home">
+        <!-- Home section start -->
         <div class="home-container">
+          <!-- Hero image displayed in the background -->
           <img
             src="img/heroman.jpg"
             alt="Hero Image"
             class="background-image"
           />
+
+          <!-- Main content container for text and headings -->
           <div class="container">
             <h6 class="power"><p>POWERFULL</p></h6>
+            <!-- Subtitle with "POWERFULL" text -->
+
+            <!-- Main heading with line breaks for formatting -->
             <h1>
               Group <br />
               Practice <br />
               With Trainer
             </h1>
+
+            <!-- Description paragraph with placeholder text -->
             <br />
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -74,47 +97,76 @@
               Voluptates, vero id. Perferendis.
             </p>
           </div>
+
+          <!-- Buttons for signing up and viewing details -->
           <div class="home-buttons">
             <button class="sign">Sign Up</button>
             <button class="details">Details</button>
           </div>
         </div>
       </section>
+      <!-- Home section end -->
+
+      <!-- Statistics section start with flexbox layout -->
       <div class="flex-container">
+        <!-- Displaying number of courses -->
         <div>
           <p>325<br /><span>Course</span></p>
         </div>
+
+        <!-- Displaying number of workouts -->
         <div>
           <p>405<br /><span>Work Out</span></p>
         </div>
+
+        <!-- Displaying number of working hours -->
         <div>
           <p>
             305 <br />
             <span>Working Hour</span>
           </p>
         </div>
+
+        <!-- Displaying number of happy clients -->
         <div>
           <p>705<br /><span>Happy Client</span></p>
         </div>
       </div>
+      <!-- Statistics section end -->
+
       <section class="classes" id="classes">
+        <!-- Classes section start -->
         <div class="class-container">
+          <!-- Background shape for decorative purposes -->
           <div class="bg-shape"></div>
+
+          <!-- Section heading -->
           <h2>OUR CLASSES</h2>
+
+          <!-- Decorative line under heading -->
           <div class="line"></div>
+
+          <!-- Section description with placeholder text -->
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
             Necessitatibus odit aut iste. Amet consectetur adipisicing elit
           </p>
+
+          <!-- Buttons to navigate between different class categories -->
           <div class="button-container">
             <button id="yoga">Yoga</button>
             <button id="group">Group</button>
             <button id="solo">Solo</button>
             <button id="stretch">Stretching</button>
           </div>
+
+          <!-- Container for class features and details -->
           <div id="features-container">
             <div>
+              <!-- Yoga feature title -->
               <h6>Why Are Your Yoga?</h6>
+
+              <!-- Feature description with placeholder text -->
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. In,
                 nihil recusandae. Atque, illum corporisodio pariatur ad harum
@@ -122,43 +174,383 @@
                 earum fugit ipsum repellendus architecto ducimus explicabo
                 reiciendis alias quasi culpa libero amet similique nisi!
               </p>
+
+              <!-- Another feature title -->
               <h6>When comes Yoga Your Time.</h6>
+
+              <!-- Schedule for Yoga classes -->
               <p>Saturday-Sunday: 8:00am - 10:00pm</p>
               <p>Monday-Tuesday: 8:00am - 10:00pm</p>
               <p>Wednesday-Friday: 8:00am - 10:00pm</p>
             </div>
+
+            <!-- Image related to Yoga classes -->
             <img src="img/yoga.jpg" />
           </div>
         </div>
       </section>
+      <!-- Classes section end -->
 
+      <!-- BMI Calculator section start -->
       <div class="bmi-container">
         <div class="calculate-container">
+          <!-- BMI Calculator heading -->
           <h1>BMI Calculator</h1>
+
+          <!-- Description text about the BMI Calculator -->
           <p>
             Contrary to popular belief, Lorem ipsum is not simply random text.
-            It has roots a piece of classical Latin literature from 54 BC,
+            It has roots a piece of classical Latin literature from 45 BC,
             making it over 2000 years old. <br /><br />
             Contrary to popular belief, Lorem ipsum is not simply random text.
-            It has roots a piece of classical Latin literature from 54 BC,
+            It has roots a piece of classical Latin literature from 45 BC,
             making it over 2000 years old.
           </p>
+
+          <!-- Input field for height with unit "cm" -->
           <input id="height" type="text" placeholder="Your Height" /><span
             style="margin-right: 0.43rem"
             >cm</span
           >
+
+          <!-- Input field for weight with unit "kg" -->
           <input id="weight" type="text" placeholder="Your Weight" /><span
             >kg</span
           >
         </div>
+
+        <!-- Container for displaying the BMI result -->
         <div class="img-container">
+          <!-- Title for BMI result section -->
           <h4>Your BMI</h4>
+
+          <!-- Image representing BMI index -->
           <img src="img/bmi-index.jpg" />
+
+          <!-- Triangle shape to indicate BMI on the index -->
           <div class="triangle"></div>
         </div>
       </div>
-    </header>
+      <!-- BMI Calculator section end -->
 
+      <section class="trainer" id="trainer">
+        <!-- Trainer section start -->
+        <div class="trainer-container">
+          <!-- Section heading for best trainers -->
+          <h2>OUR BEST TRAINERS</h2>
+
+          <!-- Decorative line under heading -->
+          <div class="line"></div>
+
+          <!-- Description paragraph about trainers -->
+          <p>
+            Lorem ipsum is not simply random text. It has roots in a piece of
+            classical at <br />
+            Hampden-Sydney Collage.
+          </p>
+
+          <!-- Container for displaying trainer profiles -->
+          <div class="trainers-container">
+            <!-- First trainer profile -->
+            <div class="trainer-portfolio">
+              <div class="stick"></div>
+              <!-- Vertical line decoration -->
+              <img src="img/trainer1.jpg" />
+              <!-- Trainer image -->
+              <div class="stick-bottom"></div>
+              <!-- Bottom line decoration -->
+              <div class="trainer-layer">
+                <h4>Olivia Johnson</h4>
+                <!-- Trainer's name -->
+                <p>Pilates Trainer</p>
+                <!-- Trainer's specialization -->
+              </div>
+            </div>
+
+            <!-- Second trainer profile -->
+            <div class="trainer-portfolio">
+              <div class="stick"></div>
+              <!-- Vertical line decoration -->
+              <img src="img/trainer2.jpg" />
+              <!-- Trainer image -->
+              <div class="stick-bottom"></div>
+              <!-- Bottom line decoration -->
+              <div class="trainer-layer">
+                <h4>Johnny Bravo</h4>
+                <!-- Trainer's name -->
+                <p>Personal Trainer</p>
+                <!-- Trainer's specialization -->
+              </div>
+            </div>
+
+            <!-- Third trainer profile -->
+            <div class="trainer-portfolio">
+              <div class="stick"></div>
+              <!-- Vertical line decoration -->
+              <img src="img/trainer3.jpg" />
+              <!-- Trainer image -->
+              <div class="stick-bottom"></div>
+              <!-- Bottom line decoration -->
+              <div class="trainer-layer">
+                <h4>Jane Doe</h4>
+                <!-- Trainer's name -->
+                <p>Cardio Trainer</p>
+                <!-- Trainer's specialization -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Trainer section end -->
+
+      <div class="purchase">
+        <!-- Purchase section start -->
+        <div class="purchase-container">
+          <!-- Section heading for purchases -->
+          <h2>PURCHASE FROM US</h2>
+
+          <!-- Decorative line under heading -->
+          <div class="line"></div>
+
+          <!-- Description paragraph about purchasing -->
+          <p>
+            Lorem ipsum not simply random text. It has roots in a piece of
+            classical at <br />
+            Hampden-Sydney College.
+          </p>
+
+          <!-- Container for displaying equipment cards -->
+          <div class="equipment-container">
+            <!-- First equipment card -->
+            <div class="equipment-card">
+              <img src="img/purchase1.jpg" />
+              <!-- Equipment image -->
+              <div class="card-layer">
+                <h5>Kettlebell / 5kg</h5>
+                <!-- Equipment name -->
+                <p><span>89,99$</span>/ 59,99$</p>
+                <!-- Price information -->
+                <p><i class="fa-solid fa-cart-shopping"></i>Add To Cart</p>
+                <!-- Add to cart button -->
+              </div>
+            </div>
+
+            <!-- Second equipment card -->
+            <div class="equipment-card">
+              <img src="img/purchase2.jpg" />
+              <!-- Equipment image -->
+              <div class="card-layer">
+                <h5>Treadmill</h5>
+                <!-- Equipment name -->
+                <p><span>899,99$</span>/ 599,99$</p>
+                <!-- Price information -->
+                <p><i class="fa-solid fa-cart-shopping"></i>Add To Cart</p>
+                <!-- Add to cart button -->
+              </div>
+            </div>
+
+            <!-- Third equipment card -->
+            <div class="equipment-card">
+              <img src="img/purchase3.jpg" />
+              <!-- Equipment image -->
+              <div class="card-layer">
+                <h5>Adjustable Dumbbell</h5>
+                <!-- Equipment name -->
+                <p><span>89,99$</span>/ 59,99$</p>
+                <!-- Price information -->
+                <p><i class="fa-solid fa-cart-shopping"></i>Add To Cart</p>
+                <!-- Add to cart button -->
+              </div>
+            </div>
+
+            <!-- Fourth equipment card -->
+            <div class="equipment-card">
+              <img src="img/purchase4.jpg" />
+              <!-- Equipment image -->
+              <div class="card-layer">
+                <h5>KettleBell / 3kg</h5>
+                <!-- Equipment name -->
+                <p><span>899,99$</span>/ 59,99$</p>
+                <!-- Price information -->
+                <p><i class="fa-solid fa-cart-shopping"></i>Add To Cart</p>
+                <!-- Add to cart button -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Purchase section end -->
+      <section class="review" id="review">
+        <!-- Review section start -->
+        <div class="review-container">
+          <!-- Section heading for client reviews -->
+          <h2>REVIEW CLIENT</h2>
+
+          <!-- Decorative line under heading -->
+          <div class="line"></div>
+
+          <!-- Description paragraph about the reviews -->
+          <p>
+            Lorem ipsum is not simply random text. It has roots in a piece of
+            classical at <br />
+            Hampden-Sydney College.
+          </p>
+
+          <!-- Container for displaying client reviews -->
+          <div class="client-container">
+            <!-- First client review -->
+            <div class="review">
+              <div class="client">
+                <img src="img/client1.jpg" />
+                <!-- Client image -->
+                <p><span>Diet Expert</span><br />CFO</p>
+                <!-- Client title and position -->
+              </div>
+              <div class="comment">
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Impedit libero necessitatibus deleniti. Iusto provident
+                  eveniet quas, in officia facere! Vitae quam possimus
+                  perspiciatis minima ullam magnam nostrum fugiat. Unde,
+                  laboriosam?
+                </p>
+              </div>
+            </div>
+
+            <!-- Second client review -->
+            <div class="review">
+              <div class="client">
+                <img src="img/client2.jpg" />
+                <!-- Client image -->
+                <p><span>Cardio Trainer</span><br />CEO</p>
+                <!-- Client title and position -->
+              </div>
+              <div class="comment">
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Impedit libero necessitatibus deleniti. Iusto provident
+                  eveniet quas, in officia facere! Vitae quam possimus
+                  perspiciatis minima ullam magnam nostrum fugiat. Unde,
+                  laboriosam?
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Review section end -->
+      <section class="contact" id="contact">
+        <!-- Contact section start -->
+        <div class="contact-container">
+          <!-- Section heading for contact information -->
+          <h2>CONTACT US</h2>
+
+          <!-- Decorative line under heading -->
+          <div class="line"></div>
+
+          <!-- Description paragraph about the contact section -->
+          <p>
+            Lorem ipsum is not simply random text. It has roots in a piece of
+            classical at <br />
+            Hampden-Sydney College.
+          </p>
+
+          <!-- Container for contact message and details -->
+          <div class="message-container">
+            <!-- Phone and email information section -->
+            <div class="phone-container">
+              <h6>
+                Mobile Number &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Email
+                Address
+              </h6>
+              <span>+135 773 321 4442&nbsp; &nbsp; &nbsp;demo@demo.com</span>
+
+              <!-- Appointment input fields -->
+              <div class="input-container">
+                <h3>Make An Appointment</h3>
+                <input type="text" placeholder="Your Name" id="textname" />
+                <!-- Input for name -->
+                <input type="email" placeholder="Your Email" id="ymail" />
+                <!-- Input for email -->
+                <textarea
+                  rows="5"
+                  cols="50"
+                  name="text"
+                  placeholder="Your Message"
+                ></textarea>
+                <!-- Textarea for message -->
+              </div>
+            </div>
+
+            <!-- Google Maps integration for location -->
+            <div class="googleMap">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6119.130744438523!2d32.822356193140685!3d39.9287416134493!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14d34f20f1e3c1e1%3A0x371e33cacc518318!2sBah%C3%A7elievler%2C%2006490%20%C3%87ankaya%2FAnkara!5e0!3m2!1str!2str!4v1727780059591!5m2!1str!2str"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+              <!-- Embedded Google Map -->
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Contact section end -->
+
+      <footer>
+        <!-- Footer section start -->
+        <div class="footer">
+          <!-- Logo section -->
+          <div class="logo">
+            <img src="img/logo.png" alt="band" />
+            <!-- Logo image -->
+          </div>
+
+          <!-- Description paragraph about the brand -->
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Reprehenderit totam ipsum quo numquam minima hic at, itaque ad. Nam
+            dicta deleniti, nemo tenetur cum eius beatae ea eos iusto est minima
+            dignissimos, mollitia iure similique! Lorem ipsum dolor sit amet
+            consectetur adipisicing.
+          </p>
+
+          <!-- Container for footer links -->
+          <div class="footer-container">
+            <!-- Information links section -->
+            <div class="info">
+              <h3>Information</h3>
+              <a href="#">About Us</a>
+              <!-- Link to About Us page -->
+              <a href="#">Classes</a>
+              <!-- Link to Classes page -->
+              <a href="#">Blog</a>
+              <!-- Link to Blog page -->
+              <a href="#">Contact</a>
+              <!-- Link to Contact page -->
+            </div>
+
+            <!-- Helpful links section -->
+            <div class="links">
+              <h3>Helpful Links</h3>
+              <a href="#">Services</a>
+              <!-- Link to Services page -->
+              <a href="#">Supports</a>
+              <!-- Link to Supports page -->
+              <a href="#">Terms & Condition</a>
+              <!-- Link to Terms & Condition page -->
+              <a href="#">Privacy Policy</a>
+              <!-- Link to Privacy Policy page -->
+            </div>
+          </div>
+        </div>
+        <!-- Footer section end -->
+      </footer>
+    </header>
     <script src="js/main.js"></script>
+    <!-- Link to the main JavaScript file -->
   </body>
 </html>

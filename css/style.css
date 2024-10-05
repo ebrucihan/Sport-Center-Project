@@ -1,334 +1,929 @@
 * {
-  box-sizing: border-box;
-  scroll-behavior: smooth;
+  box-sizing: border-box; /* Set box-sizing to border-box for all elements */
+  scroll-behavior: smooth; /* Enable smooth scrolling */
 }
 
 :root {
-  --text-color: #f5f8f3;
-  --sc-txtcolor: #365194;
-  --main-color: black;
+  --text-color: #f5f8f3; /* Define primary text color */
+  --sc-txtcolor: #365194; /* Define secondary text color */
+  --main-color: black; /* Define main color */
 }
 
 body {
-  overflow-x: hidden;
-  margin: 0;
-  font-family: "Open Sans", sans-serif;
+  overflow-x: hidden; /* Hide horizontal overflow */
+  margin: 0; /* Remove default margin */
+  font-family: "Open Sans", sans-serif; /* Set font for the body */
 }
 
 /*navbar*/
 nav {
-  display: flex;
-  justify-content: space-between;
-  padding: 0.3rem 20% 0.3rem 16%;
-  align-items: center;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  left: 0;
-  z-index: 100;
+  display: flex; /* Use flexbox for navigation layout */
+  justify-content: space-between; /* Space items evenly */
+  padding: 0.3rem 20% 0.3rem 16%; /* Padding for the navbar */
+  align-items: center; /* Center items vertically */
+  position: fixed; /* Fix navbar at the top */
+  width: 100%; /* Full width */
+  top: 0; /* Align to the top */
+  left: 0; /* Align to the left */
+  z-index: 100; /* Ensure navbar is above other content */
 }
 
 .scrolled {
-  background-color: #325494;
+  background-color: #325494; /* Change background color when scrolled */
 }
+
 .bar {
-  display: flex;
-  align-items: center;
+  display: flex; /* Use flexbox for bar layout */
+  align-items: center; /* Center items vertically in the bar */
 }
 
 .logo img {
-  height: 60px;
+  height: 60px; /* Set logo image height */
 }
 
 .bgColor {
-  background-color: #355592;
-  transition: all 1s;
-  height: 72px;
+  background-color: #355592; /* Set background color for the navbar */
+  transition: all 1s; /* Smooth transition for background color */
+  height: 72px; /* Set height of the navbar */
 }
 
 .menu-btn,
 .menu-icon {
-  display: none;
+  display: none; /* Hide menu button and icon */
 }
 
 .bar a {
-  font-size: 1rem;
-  margin-right: 20px;
-  color: var(--text-color);
-  text-decoration: none;
-  font-weight: bolder;
+  font-size: 1rem; /* Set font size for links */
+  margin-right: 20px; /* Margin to the right of each link */
+  color: var(--text-color); /* Use defined text color */
+  text-decoration: none; /* Remove underline from links */
+  font-weight: bolder; /* Make font bolder */
 }
 
 .bar button {
-  background-color: #f39f15;
-  border-radius: 4px;
-  border: none;
-  height: 1.5rem;
-  width: 5rem;
-  margin-left: 5px;
-  cursor: pointer;
+  background-color: #f39f15; /* Set button background color */
+  border-radius: 4px; /* Round button corners */
+  border: none; /* Remove default border */
+  height: 1.5rem; /* Set button height */
+  width: 5rem; /* Set button width */
+  margin-left: 5px; /* Margin to the left of the button */
+  cursor: pointer; /* Change cursor to pointer on hover */
 }
 
 .bar button p {
-  font-size: 14px;
-  font-weight: 800;
+  font-size: 14px; /* Set font size for button text */
+  font-weight: 800; /* Set font weight for button text */
 }
 /*navbar end*/
 
 /*Home */
 
 #home {
-  background-size: cover;
-  background-position: center;
-  min-height: 100vh;
+  background-size: cover; /* Cover the entire background */
+  background-position: center; /* Center the background image */
+  min-height: 100vh; /* Minimum height of the home section */
 }
 
 .home {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: var(--text-color);
-  padding: 12rem 20% 2% 16%;
-  position: relative;
+  display: flex; /* Use flexbox for layout */
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+  color: var(--text-color); /* Use defined text color */
+  padding: 12rem 20% 2% 16%; /* Padding for home section */
+  position: relative; /* Position relative for absolute elements */
 }
 
 .background-image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: -1;
+  position: absolute; /* Position background image absolutely */
+  top: 0; /* Align to the top */
+  left: 0; /* Align to the left */
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  object-fit: cover; /* Cover the area without distortion */
+  z-index: -1; /* Place behind other elements */
 }
 
 .power {
-  background-color: #325494;
-  border-radius: 4px;
-  border: none;
-  height: 40px;
-  color: var(--text-color);
-  width: 10rem;
-  text-shadow: 2px 2px 4px #000000;
-  font-weight: bolder;
-  text-align: center;
-  padding-top: 0.3rem;
-  font-size: 1.5rem;
-  transform: translateY(-8px);
+  background-color: #325494; /* Button background color */
+  border-radius: 4px; /* Round button corners */
+  border: none; /* Remove default border */
+  height: 40px; /* Set button height */
+  color: var(--text-color); /* Use defined text color */
+  width: 10rem; /* Set button width */
+  text-shadow: 2px 2px 4px #000000; /* Add text shadow for visibility */
+  font-weight: bolder; /* Make font bolder */
+  text-align: center; /* Center text in button */
+  padding-top: 0.3rem; /* Add padding at the top */
+  font-size: 1.5rem; /* Set font size for button text */
+  transform: translateY(-8px); /* Slightly raise the button */
 }
 
 .container h1 {
-  font-size: 80px;
-  font-weight: 700; /* Hedeflenen ağırlığı düzenle */
-  text-shadow: 2px 2px 4px #000000;
-  transform: translateY(-20px);
+  font-size: 80px; /* Set font size for the heading */
+  font-weight: 700; /* Set font weight for the heading */
+  text-shadow: 2px 2px 4px #000000; /* Add text shadow for visibility */
+  transform: translateY(-20px); /* Slightly raise the heading */
 }
 
 .container > p {
-  top: 0;
-  background-color: rgba(0, 0, 0, 0.6);
-  font-size: 23px;
-  font-weight: 700;
-  padding: 1rem;
-  transform: translateY(-50px);
+  top: 0; /* Align to the top */
+  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+  font-size: 23px; /* Set font size for paragraph */
+  font-weight: 700; /* Set font weight for paragraph */
+  padding: 1rem; /* Add padding to paragraph */
+  transform: translateY(-50px); /* Slightly raise the paragraph */
 }
 
 .sign {
-  background-color: #355592;
-  border-radius: 4px;
-  border: none;
-  width: 7rem;
-  height: 3rem;
-  color: var(--text-color);
-  font-size: 20px;
-  font-weight: 800;
-  transform: translateY(-50px) translateX(13px);
+  background-color: #355592; /* Button background color */
+  border-radius: 4px; /* Round button corners */
+  border: none; /* Remove default border */
+  width: 7rem; /* Set button width */
+  height: 3rem; /* Set button height */
+  color: var(--text-color); /* Use defined text color */
+  font-size: 20px; /* Set font size for button text */
+  font-weight: 800; /* Set font weight for button text */
+  transform: translateY(-50px) translateX(13px); /* Slightly raise and shift the button */
 }
 
 .details {
-  border-radius: 4px;
-  border: 2px solid white;
-  background-color: rgba(0, 0, 0, 0.5);
-  height: 3rem;
-  width: 7rem;
-  color: var(--text-color);
-  font-size: 20px;
-  font-weight: 700;
-  margin-left: 2rem;
-  transform: translateY(-50px) translateX(10px);
+  border-radius: 4px; /* Round corners of details box */
+  border: 2px solid white; /* White border around details box */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  height: 3rem; /* Set height for details box */
+  width: 7rem; /* Set width for details box */
+  color: var(--text-color); /* Use defined text color */
+  font-size: 20px; /* Set font size for details text */
+  font-weight: 700; /* Set font weight for details text */
+  margin-left: 2rem; /* Margin to the left of details box */
+  transform: translateY(-50px) translateX(10px); /* Slightly raise and shift the box */
+}
+
+.sign:hover {
+  background-color: #2a4573; /* Change background color on hover */
+}
+
+.details:hover {
+  background-color: rgba(0, 0, 0, 0.7); /* Darken background on hover */
 }
 
 /*Home end */
 
 /* flex box */
 .flex-container {
-  display: flex;
-  background-color: #f1f8ff;
-  flex-direction: row;
-  justify-content: center;
-  padding: 1.5rem;
+  display: flex; /* Enable flexbox layout */
+  background-color: #f1f8ff; /* Set background color for the container */
+  flex-direction: row; /* Arrange flex items in a row */
+  justify-content: center; /* Center items horizontally within the container */
+  padding: 1.5rem; /* Add padding around the container */
 }
 
 .flex-container > div {
-  background-color: white;
-  margin: 10px;
-  padding: 20px;
-  font-size: 30px;
-  width: 12rem;
-  height: 7rem;
+  background-color: white; /* Set background color for flex items */
+  margin: 10px; /* Add margin around each flex item */
+  padding: 20px; /* Add padding inside each flex item */
+  font-size: 30px; /* Set font size for text within flex items */
+  width: 12rem; /* Set width of each flex item */
+  height: 7rem; /* Set height of each flex item */
 }
 
 .flex-container > div > p {
-  color: #325494;
-  font-weight: 800;
-  text-align: center;
-  font-size: 21px;
+  color: #325494; /* Set text color for paragraph within flex items */
+  font-weight: 800; /* Set font weight for paragraph text */
+  text-align: center; /* Center text within paragraph */
+  font-size: 21px; /* Set font size for paragraph text */
 }
 
 .flex-container > div > p > span {
-  color: black;
-  font-weight: 800;
+  color: black; /* Set text color for span within paragraph */
+  font-weight: 800; /* Set font weight for span text */
 }
 
-/* flex box end*/
+/* flex box end */
 
 /*Classes*/
 
 .classes {
-  position: relative;
+  position: relative; /* Positioning context for absolute elements */
 }
 
 .class-container {
-  padding-bottom: 5%;
-  width: 60%;
-  margin: auto;
-}
-
-.bg-shape {
-  position: absolute;
-  right: 0;
-  z-index: -1;
-  height: 100%;
-  width: 60%;
-  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 25% 100%, 12.5% 50%);
-  background: #f6f6f6;
-}
-
-.class-container h2 {
-  padding-top: 2rem;
-  text-align: center;
-  color: var(--sc-txtcolor);
-  font-weight: 700;
+  padding-bottom: 5%; /* Space at the bottom of the container */
+  width: 60%; /* Set width of the class container */
+  margin: auto; /* Center the container horizontally */
 }
 
 .line {
-  border: solid 3px #f39f15;
-  color: #f39f15;
-  width: 8%;
-  margin: auto;
-  border-radius: 100px;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  border: solid 3px #f39f15; /* Set border style and color */
+  color: #f39f15; /* Set text color */
+  width: 8%; /* Set width of the line */
+  margin: auto; /* Center the line */
+  border-radius: 100px; /* Rounded corners */
+  margin-top: 1rem; /* Space above the line */
+  margin-bottom: 1rem; /* Space below the line */
+}
+
+.bg-shape {
+  position: absolute; /* Position the shape relative to the parent */
+  right: 0; /* Align to the right */
+  z-index: -1; /* Place behind other elements */
+  height: 100%; /* Full height of the parent */
+  width: 60%; /* Set width of the background shape */
+  clip-path: polygon(
+    0% 0%,
+    100% 0%,
+    100% 100%,
+    25% 100%,
+    12.5% 50%
+  ); /* Create a custom shape */
+  background: #f6f6f6; /* Set background color */
+}
+
+.class-container h2 {
+  padding-top: 2rem; /* Space above the heading */
+  text-align: center; /* Center the heading text */
+  color: var(--sc-txtcolor); /* Set heading color */
+  font-weight: 700; /* Set font weight for the heading */
 }
 
 .classes p {
-  text-align: center;
-  color: var(--main-color);
-  font-weight: 700;
+  text-align: center; /* Center paragraph text */
+  color: var(--main-color); /* Set paragraph color */
+  font-weight: 700; /* Set font weight for the paragraph */
 }
 
 .button-container {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  gap: 10%;
+  display: flex; /* Enable flexbox layout for buttons */
+  justify-content: center; /* Center buttons horizontally */
+  gap: 20px; /* Space between buttons */
+  margin-top: 2rem; /* Space above the button container */
 }
 
 .button-container button {
-  background-color: var(--sc-txtcolor);
-  color: var(--text-color);
-  font-weight: 800;
-  border-radius: 5px;
-  width: 100px;
-  height: 50px;
-  margin-top: 2rem;
-  border: none;
+  background-color: var(--sc-txtcolor); /* Set button background color */
+  color: var(--text-color); /* Set button text color */
+  font-weight: 800; /* Set font weight for button text */
+  border-radius: 5px; /* Rounded corners for buttons */
+  width: 150px; /* Set width of buttons */
+  height: 50px; /* Set height of buttons */
+  border: none; /* Remove border */
+  position: relative; /* Positioning context for pseudo-elements */
+  transition: background-color 0.3s ease; /* Smooth transition for background color change */
 }
 
-.classes button:hover {
-  background-color: #f39f15;
+.button-container button.selected {
+  background-color: #f39f15; /* Set selected button color */
+}
+
+.button-container button.selected::after {
+  content: ""; /* Create an empty content for the triangle */
+  position: absolute; /* Position triangle relative to the button */
+  bottom: -10px; /* Position below the button */
+  left: 50%; /* Center the triangle horizontally */
+  transform: translateX(-50%); /* Adjust positioning to center */
+  width: 0; /* No width for triangle */
+  height: 0; /* No height for triangle */
+  border-left: 10px solid transparent; /* Left side of the triangle */
+  border-right: 10px solid transparent; /* Right side of the triangle */
+  border-top: 10px solid #f39f15; /* Top side color of the triangle */
+}
+
+.button-container button:hover {
+  background-color: #f39f15; /* Change background color on hover */
 }
 
 #features-container {
-  padding-top: 1.5rem;
-  display: flex;
-  gap: 10%;
-  align-items: center;
+  padding-top: 1.5rem; /* Space above features container */
+  display: flex; /* Enable flexbox layout for features */
+  gap: 10%; /* Space between features */
+  align-items: center; /* Center items vertically */
 }
 
 #features-container h6 {
-  padding-top: 2rem;
-  font-weight: 800;
-  text-align: start;
-  font-size: 1.5rem;
+  padding-top: 2rem; /* Space above heading */
+  font-weight: 800; /* Set font weight for heading */
+  text-align: start; /* Align heading to the start */
+  font-size: 1.5rem; /* Set font size for heading */
 }
+
 #features-container p {
-  font-weight: 600;
-  text-align: start;
-  margin-top: 1.5rem;
+  font-weight: 600; /* Set font weight for paragraph */
+  text-align: start; /* Align paragraph to the start */
+  margin-top: 1.5rem; /* Space above paragraph */
 }
 
 #features-container img {
-  width: 50%;
+  width: 50%; /* Set width of images in the features container */
 }
 
 /*BMI*/
 
 .bmi-container {
-  display: flex;
-  width: 75%;
-  margin: auto;
-  gap: 10%;
-  padding-bottom: 2rem;
+  display: flex; /* Enable flexbox layout for the BMI container */
+  width: 75%; /* Set width of the BMI container */
+  margin: auto; /* Center the container horizontally */
+  gap: 10%; /* Space between the flex items */
+  padding-bottom: 2rem; /* Space at the bottom of the container */
 }
 
 .calculate-container {
-  width: 50%;
-  margin: auto;
+  width: 50%; /* Set width for the calculation section */
+  margin: auto; /* Center the calculation section horizontally */
 }
+
 .calculate-container h1 {
-  color: var(--sc-txtcolor);
-  font-weight: 800;
+  color: var(--sc-txtcolor); /* Set heading color */
+  font-weight: 800; /* Set font weight for the heading */
 }
 
 .calculate-container p {
-  font-weight: 700;
-  text-align: start;
+  font-weight: 700; /* Set font weight for paragraph text */
+  text-align: start; /* Align paragraph text to the start */
 }
 
 .calculate-container input {
-  border-radius: 5px;
-  border: 2px solid black;
+  border-radius: 5px; /* Rounded corners for input fields */
+  border: 2px solid black; /* Black border for input fields */
 }
 
 .calculate-container span {
-  padding-left: 0.3rem;
+  padding-left: 0.3rem; /* Space on the left of the span element */
 }
 
 .img-container img {
-  width: 100%;
+  width: 100%; /* Set image width to fill the container */
 }
 
 .img-container {
-  text-align: center;
-  position: relative;
+  text-align: center; /* Center the content inside the image container */
+  position: relative; /* Positioning context for absolute elements */
 }
+
 .triangle {
-  position: absolute;
-  width: 0;
-  height: 0;
-  border: 15px solid transparent;
-  border-top: 0;
-  border-bottom: 30px solid #f39f15;
-  left: 6%;
+  position: absolute; /* Position triangle relative to the img-container */
+  width: 0; /* No width for the triangle */
+  height: 0; /* No height for the triangle */
+  border: 15px solid transparent; /* Create transparent borders for triangle */
+  border-top: 0; /* No top border for the triangle */
+  border-bottom: 30px solid #f39f15; /* Set bottom border color for triangle */
+  left: 6%; /* Position triangle to the left */
+}
+
+/*Trainers*/
+
+.trainer-container {
+  background-color: #f1f8ff; /* Set background color for the trainer container */
+  padding-top: 2rem; /* Padding at the top of the trainer container */
+  padding-bottom: 2rem; /* Padding at the bottom of the trainer container */
+}
+
+.trainer-container h2 {
+  text-align: center; /* Center the heading text */
+  color: var(--sc-txtcolor); /* Set color for the heading */
+  font-weight: 700; /* Set font weight for the heading */
+}
+
+.trainer-container p {
+  text-align: center; /* Center the paragraph text */
+  color: var(--main-color); /* Set color for the paragraph */
+  font-weight: 700; /* Set font weight for the paragraph */
+}
+
+.trainers-container {
+  padding-top: 2rem; /* Padding at the top of the trainers container */
+  display: flex; /* Enable flexbox layout for trainers */
+  gap: 5rem; /* Space between trainer items */
+  width: 60%; /* Set width for the trainers container */
+  margin: auto; /* Center the trainers container horizontally */
+}
+
+.trainers-container img {
+  width: 100%; /* Set image width to fill the container */
+  border: #f39f15 2px solid; /* Add a solid border with a specific color */
+  border-radius: 10px; /* Rounded corners for images */
+  transition: 0.5s ease; /* Smooth transition for hover effects */
+  opacity: 1; /* Fully visible */
+  backface-visibility: hidden; /* Prevents backface rendering */
+  position: relative; /* Positioning context for pseudo-elements */
+}
+
+.trainer-portfolio::after {
+  position: absolute; /* Position after pseudo-element absolutely */
+  clip-path: inset(0 95% 0 0); /* Create a clipped shape */
+  content: ""; /* Empty content for pseudo-element */
+  background-color: #325494; /* Background color for the after pseudo-element */
+  width: 10rem; /* Set width for the after pseudo-element */
+  height: 7rem; /* Set height for the after pseudo-element */
+  top: 30%; /* Position from the top */
+  transition: 0.5s ease; /* Smooth transition for hover effects */
+}
+
+.trainer-portfolio::before {
+  position: absolute; /* Position before pseudo-element absolutely */
+  content: ""; /* Empty content for pseudo-element */
+  clip-path: inset(0 0 0 95%); /* Create a clipped shape */
+  background-color: #325494; /* Background color for the before pseudo-element */
+  width: 10rem; /* Set width for the before pseudo-element */
+  height: 7rem; /* Set height for the before pseudo-element */
+  top: 30%; /* Position from the top */
+  right: 100%; /* Position to the left of the container */
+  transition: 0.5s ease; /* Smooth transition for hover effects */
+}
+
+.stick {
+  position: absolute; /* Position stick element absolutely */
+  clip-path: inset(0 0 95% 0); /* Create a clipped shape */
+  content: ""; /* Empty content for stick element */
+  background-color: #325494; /* Background color for the stick */
+  width: 7rem; /* Set width for the stick */
+  height: 10rem; /* Set height for the stick */
+  top: -2.5%; /* Position from the top */
+  left: 28%; /* Position from the left */
+}
+
+.stick-bottom {
+  position: absolute; /* Position stick element absolutely */
+  clip-path: inset(0 0 95% 0); /* Create a clipped shape */
+  content: ""; /* Empty content for stick element */
+  background-color: #325494; /* Background color for the stick */
+  width: 7rem; /* Set width for the stick */
+  height: 10rem; /* Set height for the stick */
+  top: 100%; /* Position below the container */
+  left: 28%; /* Position from the left */
+}
+
+.trainer-portfolio {
+  position: relative; /* Positioning context for inner elements */
+}
+
+.trainer-layer {
+  position: absolute; /* Position layer absolutely */
+  transition: 0.5s ease; /* Smooth transition for hover effects */
+  opacity: 0; /* Initially hidden */
+  top: 80%; /* Position from the top */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Center using transform */
+  -ms-transform: translate(-50%, -50%); /* Fallback for older browsers */
+  text-align: center; /* Center text inside the layer */
+  background-color: var(--sc-txtcolor); /* Background color for the layer */
+  font-size: 16px; /* Font size for text */
+  padding: 2px 2px; /* Padding around text */
+  color: white; /* Text color */
+  width: 60%; /* Set width for the layer */
+}
+
+.trainer-portfolio:hover .trainer-layer {
+  opacity: 1; /* Show layer on hover */
+}
+
+.trainer-portfolio:hover::after {
+  height: 12rem; /* Increase height of the after pseudo-element on hover */
+}
+
+.trainer-portfolio:hover::before {
+  height: 12rem; /* Increase height of the before pseudo-element on hover */
+}
+
+.trainer-layer p {
+  color: white; /* Set text color for paragraph inside the layer */
+}
+
+/*Purchase*/
+
+.purchase-container {
+  padding-top: 3rem; /* Padding at the top of the purchase container */
+  padding-bottom: 2rem; /* Padding at the bottom of the purchase container */
+}
+
+.purchase-container h2 {
+  text-align: center; /* Center the heading text */
+  color: var(--sc-txtcolor); /* Set color for the heading */
+  font-weight: 700; /* Set font weight for the heading */
+}
+
+.purchase-container p {
+  text-align: center; /* Center the paragraph text */
+  color: var(--main-color); /* Set color for the paragraph */
+  font-weight: 700; /* Set font weight for the paragraph */
+}
+
+.equipment-container {
+  padding-top: 2rem; /* Padding at the top of the equipment container */
+  display: flex; /* Enable flexbox layout for equipment items */
+  gap: 1.5rem; /* Space between equipment cards */
+  width: 70%; /* Set width for the equipment container */
+  margin: auto; /* Center the equipment container horizontally */
+}
+
+.equipment-card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Shadow effect for equipment cards */
+  border-radius: 5px; /* Rounded corners for equipment cards */
+}
+
+.equipment-card img {
+  width: 100%; /* Set image width to fill the equipment card */
+}
+
+.card-layer {
+  text-align: center; /* Center text inside the card layer */
+  padding-bottom: 1%; /* Padding at the bottom of the card layer */
+}
+
+.card-layer p > span {
+  text-decoration: line-through; /* Strikethrough text for the span inside paragraph */
+}
+
+.card-layer p > i {
+  float: left; /* Align icon to the left */
+  margin-top: 5px; /* Margin at the top of the icon */
+  margin-left: 10px; /* Margin on the left of the icon */
+}
+
+/*Review*/
+
+.review-container {
+  background-color: #f1f8ff; /* Light background color for the review section */
+  padding-top: 3rem; /* Padding at the top of the review container */
+}
+
+.review-container h2 {
+  text-align: center; /* Center the heading text */
+  color: var(--sc-txtcolor); /* Set color for the heading */
+  font-weight: 700; /* Set font weight for the heading */
+}
+
+.review-container p {
+  text-align: center; /* Center the paragraph text */
+  color: var(--main-color); /* Set color for the paragraph */
+  font-weight: 650; /* Set font weight for the paragraph */
+}
+
+.client-container {
+  display: flex; /* Enable flexbox layout for client items */
+  width: 70%; /* Set width for the client container */
+  margin: auto; /* Center the client container horizontally */
+  gap: 5rem; /* Space between client items */
+  padding-top: 2rem; /* Padding at the top of the client container */
+  padding-bottom: 2rem; /* Padding at the bottom of the client container */
+}
+
+.client-container p > span {
+  font-weight: 800; /* Set font weight for the span inside paragraph */
+}
+
+.client {
+  display: flex; /* Enable flexbox layout for client elements */
+  gap: 0.5rem; /* Space between client name and image */
+  padding-bottom: 1rem; /* Padding at the bottom of the client element */
+}
+
+.client img {
+  border-radius: 50%; /* Round the client's image */
+  width: 60px; /* Set width for the client's image */
+}
+
+.comment {
+  position: relative; /* Set position relative for comment elements */
+  background-color: rgba(53, 85, 146, 1); /* Background color for comment */
+}
+
+.comment::after {
+  position: absolute; /* Position for the after pseudo-element */
+  content: ""; /* Empty content for the after pseudo-element */
+  clip-path: polygon(
+    100% 0,
+    1% 0,
+    100% 100%
+  ); /* Clip path for the triangular shape */
+  background-color: #788ec2a1; /* Background color for the triangular shape */
+  width: 2rem; /* Width for the triangular shape */
+  height: 2rem; /* Height for the triangular shape */
+  top: 100%; /* Position below the comment */
+  left: 0; /* Align to the left */
+}
+
+.comment::before {
+  position: absolute; /* Position for the before pseudo-element */
+  content: ""; /* Empty content for the before pseudo-element */
+  clip-path: polygon(
+    0 0,
+    0 100%,
+    100% 0
+  ); /* Clip path for the triangular shape */
+  background-color: #788ec2a1; /* Background color for the triangular shape */
+  width: 2rem; /* Width for the triangular shape */
+  height: 2rem; /* Height for the triangular shape */
+  top: 100%; /* Position below the comment */
+  right: 0; /* Align to the right */
+}
+
+.comment p {
+  color: #ffff; /* Text color for the comment */
+  font-weight: 500; /* Font weight for the comment text */
+  padding: 1rem; /* Padding inside the comment */
+}
+
+/*Contact*/
+
+.contact-container {
+  padding-top: 1rem; /* Padding at the top of the contact container */
+}
+
+.line {
+  border: solid 3px #f39f15; /* Orange border for the line */
+  color: #f39f15; /* Color for the line */
+  width: 8%; /* Width of the line */
+  margin: auto; /* Center the line horizontally */
+  border-radius: 100px; /* Rounded edges for the line */
+  margin-top: 1rem; /* Margin at the top of the line */
+  margin-bottom: 1rem; /* Margin at the bottom of the line */
+}
+
+.contact-container h2 {
+  text-align: center; /* Center the heading text */
+  color: var(--sc-txtcolor); /* Set color for the heading */
+  font-weight: 700; /* Set font weight for the heading */
+}
+
+.contact-container p {
+  text-align: center; /* Center the paragraph text */
+  color: var(--main-color); /* Set color for the paragraph */
+  font-weight: 700; /* Set font weight for the paragraph */
+}
+
+.message-container {
+  display: flex; /* Enable flexbox layout for the message container */
+  width: 60%; /* Set width for the message container */
+  margin: auto; /* Center the message container horizontally */
+  gap: 5rem; /* Space between child elements */
+  padding-top: 3rem; /* Padding at the top of the message container */
+  padding-bottom: 3rem; /* Padding at the bottom of the message container */
+}
+
+.input-container {
+  display: flex; /* Enable flexbox layout for the input container */
+  flex-direction: column; /* Arrange child elements in a column */
+  gap: 1.5rem; /* Space between input elements */
+  margin-top: 2rem; /* Margin at the top of the input container */
+}
+
+.input-container input,
+textarea {
+  background-color: #f1f8ff; /* Light background color for input fields */
+  border-radius: 5px; /* Rounded edges for input fields */
+}
+
+.googleMap iframe {
+  width: 150%; /* Set width for the Google Map iframe */
+  height: 100%; /* Set height for the Google Map iframe */
+}
+
+/*Footer*/
+
+footer {
+  background-color: var(
+    --sc-txtcolor
+  ); /* Set background color for the footer */
+}
+
+.footer {
+  display: flex; /* Enable flexbox layout for the footer */
+  width: 70%; /* Set width for the footer */
+  margin: auto; /* Center the footer horizontally */
+  flex-direction: column; /* Arrange child elements in a column */
+  color: white; /* Set text color to white */
+  padding-bottom: 1rem; /* Padding at the bottom of the footer */
+}
+
+.footer-container {
+  display: flex; /* Enable flexbox layout for the footer container */
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
+  justify-content: space-between; /* Distribute space between child elements */
+  width: 60%; /* Set width for the footer container */
+  margin: auto; /* Center the footer container horizontally */
+}
+
+.footer-container a {
+  text-decoration: none; /* Remove underline from links */
+  color: white; /* Set link color to white */
+}
+
+.info {
+  display: flex; /* Enable flexbox layout for info section */
+  flex-direction: column; /* Arrange child elements in a column */
+}
+
+.links {
+  display: flex; /* Enable flexbox layout for links section */
+  flex-direction: column; /* Arrange child elements in a column */
+}
+
+#height {
+  border: 1px solid rgba(0, 0, 0, 0.2); /* Set border for height input */
+  transition: border-color 0.5s ease; /* Smooth transition for border color change */
+  margin-right: 0.43rem; /* Right margin for spacing */
+}
+
+#height:hover,
+#weight:hover {
+  border-color: rgb(7, 91, 102); /* Change border color on hover */
+}
+
+#weight {
+  border: 1px solid rgba(0, 0, 0, 0.2); /* Set border for weight input */
+  transition: border-color 0.5s ease; /* Smooth transition for border color change */
+  margin-right: 0.43rem; /* Right margin for spacing */
+}
+
+#textname,
+#ymail {
+  border: 1px solid rgba(0, 0, 0, 0.2); /* Set border for text name and email inputs */
+  transition: border-color 0.5s ease; /* Smooth transition for border color change */
+  margin-right: 0.43rem; /* Right margin for spacing */
+}
+
+#textname:hover,
+#ymail:hover {
+  border-color: rgb(0, 0, 0); /* Change border color on hover */
+}
+
+/* Responsive */
+@media screen and (max-width: 576px) {
+  html,
+  body {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    width: 100%; /* Set width to 100% */
+    height: 100%; /* Set height to 100% */
+    overflow-x: hidden; /* Hide horizontal overflow */
+  }
+
+  img,
+  video {
+    max-width: 100%; /* Ensure images and videos do not exceed container width */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .menu-btn {
+    display: none; /* Hide menu button on small screens */
+  }
+
+  .menu-icon {
+    display: block; /* Show menu icon */
+    font-size: 3rem; /* Set font size for the icon */
+    color: var(--text-color); /* Set text color */
+    cursor: pointer; /* Change cursor to pointer */
+  }
+
+  .bar {
+    position: absolute; /* Position the bar absolutely */
+    transform: translateY(-400px); /* Move bar off-screen */
+  }
+
+  .navbar-container {
+    padding: 5%; /* Add padding to navbar container */
+  }
+
+  .menu-btn:checked ~ .bar {
+    display: grid; /* Display bar as a grid */
+    justify-content: end; /* Align items to the end */
+    top: 100%; /* Position below the button */
+    left: 0; /* Align to the left */
+    width: 100%; /* Set full width */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    box-shadow: 0 0.5rem 1rem rgba(255, 255, 255, 0.2); /* Add shadow */
+    transform: translateY(0); /* Move bar into view */
+    transition: 0.2s linear; /* Smooth transition */
+  }
+
+  .menu-btn:checked ~ .bar a {
+    font-size: 1rem; /* Set font size for menu links */
+    margin: 2rem 0; /* Add margin for spacing */
+  }
+
+  .home {
+    padding: 9rem 0% 9% 0%; /* Set padding for the home section */
+  }
+
+  .sign {
+    width: 100%; /* Set width for sign section */
+    display: block; /* Display as block */
+  }
+
+  .details {
+    margin-left: 0; /* Remove left margin */
+    margin-top: 0.5rem; /* Add top margin */
+    display: block; /* Display as block */
+    width: 100%; /* Set width to 100% */
+  }
+
+  .flex-container {
+    display: block; /* Display flex container as block */
+    width: 100%; /* Set width to 100% */
+  }
+
+  .flex-container > div {
+    display: block; /* Display child divs as block */
+    width: 100%; /* Set width to 100% */
+  }
+
+  .class-container {
+    display: block; /* Display class container as block */
+    width: 90%; /* Set width to 90% */
+  }
+
+  #features-container {
+    display: block; /* Display features container as block */
+    width: 100%; /* Set width to 100% */
+  }
+
+  #features-container img {
+    display: block; /* Display images as block */
+    width: 100%; /* Set width to 100% */
+  }
+
+  .bmi-container {
+    display: block; /* Display BMI container as block */
+    width: 100%; /* Set width to 100% */
+  }
+
+  .calculate-container {
+    width: 90%; /* Set width to 90% */
+  }
+
+  .img-container {
+    display: block; /* Display image container as block */
+    width: 100%; /* Set width to 100% */
+    padding-top: 2rem; /* Add top padding */
+  }
+
+  .img-container img {
+    display: block; /* Display images as block */
+    width: 100%; /* Set width to 100% */
+  }
+
+  .trainer-container {
+    display: block; /* Display trainer container as block */
+    width: 100%; /* Set width to 100% */
+  }
+
+  .trainers-container {
+    display: block; /* Display trainers container as block */
+    width: 60%; /* Set width to 60% */
+  }
+
+  .trainer-portfolio {
+    display: block; /* Display trainer portfolio as block */
+    width: 100%; /* Set width to 100% */
+    margin-bottom: 5rem; /* Add bottom margin */
+  }
+
+  .purchase-container {
+    display: block; /* Display purchase container as block */
+    width: 100%; /* Set width to 100% */
+  }
+
+  .equipment-container {
+    display: block; /* Display equipment container as block */
+    width: 80%; /* Set width to 80% */
+  }
+
+  .equipment-card {
+    margin-bottom: 2rem; /* Add bottom margin for equipment cards */
+  }
+
+  .review-container {
+    display: block; /* Display review container as block */
+    width: 100%; /* Set width to 100% */
+  }
+
+  .client-container {
+    display: block; /* Display client container as block */
+    width: 90%; /* Set width to 90% */
+    padding-bottom: 0.5rem; /* Add bottom padding */
+  }
+
+  .review {
+    margin-bottom: 4rem; /* Add bottom margin for reviews */
+  }
+
+  .message-container {
+    display: block; /* Display message container as block */
+    width: 80%; /* Set width to 80% */
+  }
+
+  .footer {
+    display: block; /* Display footer as block */
+    width: 90%; /* Set width to 90% */
+  }
+
+  .footer-container {
+    display: flex; /* Display footer container as flex */
+    width: 90%; /* Set width to 90% */
+  }
+
+  .googleMap iframe {
+    padding-top: 2rem; /* Add top padding for Google Map */
+    width: 100%; /* Set width to 100% */
+  }
 }
