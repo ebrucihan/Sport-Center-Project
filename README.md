@@ -32,7 +32,7 @@ The Sport Center Project is an interactive web application that allows users to 
 4. **Ensure you have a stable internet connection for loading external resources**.
 
 ## Additional Information
-- **Live Demo**: [View Live Project](https://shimmering-mooncake-877ab0.netlify.app/#home)
+- **Live Demo**: [View Live Project](https://67014711a3c1fd14386b907a--shimmering-mooncake-877ab0.netlify.app/)
 - **Don't forget to check that the web application works properly on different devices**.
 
 ## Screenshots
